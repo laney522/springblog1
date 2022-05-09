@@ -237,3 +237,4 @@ replay_pid*
 
 root-context.xml
 *.xml
+pom.xml
