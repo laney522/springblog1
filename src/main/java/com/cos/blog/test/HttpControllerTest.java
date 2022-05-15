@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HttpControllerTest {
 	
 	@GetMapping("/http/get")
-	public String getTest(@RequestParam int id, @RequestParam String username) {
+	public String getTest(Member m) {
 		
-		return "get request : "+ id+", "+username;
+		return "get request : "+ m.getId()+", "+m.getUsername()+", "+m.getPassword()+", "+m.getEmail();
 	}
 	
 	@PostMapping("/http/post")
