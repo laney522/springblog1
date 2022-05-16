@@ -14,13 +14,12 @@ public class HttpControllerTest {
 	
 	@GetMapping("/http/get")
 	public String getTest(Member m) {
-		
 		return "get request : "+ m.getId()+", "+m.getUsername()+", "+m.getPassword()+", "+m.getEmail();
 	}
 	
 	@PostMapping("/http/post")
-	public String postTest() {
-		return "post request";
+	public String postTest(Member m) {
+		return "post request : "+ m.getId()+", "+m.getUsername()+", "+m.getPassword()+", "+m.getEmail();
 	}
 	
 	@PutMapping("/http/put")
