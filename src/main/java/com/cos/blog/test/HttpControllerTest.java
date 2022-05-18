@@ -24,8 +24,8 @@ public class HttpControllerTest {
 	}
 	
 	@PutMapping("/http/put")
-	public String putTest() {
-		return "put request";
+	public String putTest(@RequestBody Member m) {
+		return "put request:"+ m.getId()+", "+m.getUsername()+", "+m.getPassword()+", "+m.getEmail();
 	}
 	
 	@DeleteMapping("/http/delete")
