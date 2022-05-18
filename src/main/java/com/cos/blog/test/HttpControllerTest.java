@@ -19,8 +19,8 @@ public class HttpControllerTest {
 	}
 	
 	@PostMapping("/http/post")
-	public String postTest(@RequestBody String text) {
-		return "post request : "+text;
+	public String postTest(@RequestBody Member m) { // MessageConverter(스프링부트)
+		return "post request : "+ m.getId()+", "+m.getUsername()+", "+m.getPassword()+", "+m.getEmail();
 	}
 	
 	@PutMapping("/http/put")
