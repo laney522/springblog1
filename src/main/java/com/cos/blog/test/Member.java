@@ -2,12 +2,14 @@ package com.cos.blog.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-//@AllArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class Member {
-	private final int id;
-	private final String username;
-	private final String password;
-	private final String email;
+	private int id;
+	private String username;
+	private String password;
+	private String email;
 }
