@@ -17,10 +17,11 @@ public class HttpControllerTest {
 	
 	@GetMapping("/http/lombok")
 	public String lombokTest() {
-		Member m = new Member(1, "ssar", "1234", "email");
-		System.out.println(TAG+"getter : "+m.getId());
-		m.setId(5000);
-		System.out.println(TAG+"setter : "+m.getId());
+		Member m1 = new Member(1, "1234", "ssar", "ssar@nate.com");
+		Member m = Member.builder().username("ssar").password("1234").email("ssar@nate.com").build();
+		System.out.println(TAG+"getter : "+m.getUsername());
+		m.setUsername("cos");
+		System.out.println(TAG+"setter : "+m.getUsername());
 		return "lombok test finish";
 	}
 	
