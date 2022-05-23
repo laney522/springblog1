@@ -13,7 +13,7 @@ public class TempControllerTest {
 		// 파일리턴 기본경로: src/main/resources/static
 		// 리턴명: / home.html
 		// 풀경로: src/main/resources/static/home.html
-		return "home.html";
+		return "/home.html";
 	}
 	
 	@GetMapping("/temp/img")
