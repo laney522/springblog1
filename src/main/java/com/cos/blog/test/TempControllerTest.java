@@ -18,6 +18,13 @@ public class TempControllerTest {
 	
 	@GetMapping("/temp/img")
 	public String tempImg() {
-		return "bg.png";
+		return "/bg.png";
+	}
+	
+	@GetMapping("/temp/jsp")
+	public String tempJsp() {
+		// fullname: /WEB-INF/views/test.jsp
+		// springboot ch17 finished
+		return "test";  
 	}
 }
