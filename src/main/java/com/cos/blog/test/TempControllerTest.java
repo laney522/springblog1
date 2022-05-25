@@ -24,7 +24,7 @@ public class TempControllerTest {
 	@GetMapping("/temp/jsp")
 	public String tempJsp() {
 		// fullname: /WEB-INF/views/test.jsp
-		// springboot ch17 finished
+		// springboot ch17 finished updated
 		return "test";  
 	}
 }
