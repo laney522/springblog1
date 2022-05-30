@@ -27,7 +27,7 @@ public class User {
 	
 	@Column(nullable = false, length = 50)
 	private String email;
-	
+	  
 	@ColumnDefault("'user'") // 시간이 자동 입력 
 	private String role; // Enum을 쓰는게 좋다. // 도메인설정. 어떤 범위 안의 값만 받는다. ex) admin, user, manager
 	
