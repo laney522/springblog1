@@ -29,7 +29,7 @@ public class Board {
 	private int count; // 조회수
 	
 	@ManyToOne // Many = Board, User = One 한명의 유저는 여러개의 게시글을 쓸 수 있다.
-	@JoinColumn(name="userId")
+	@JoinColumn(name="userId") 
 	private User user;// DB는 오브젝트를 저장할 수 없다. ORM 을 사용하기 때문에
 	
 	@CreationTimestamp
