@@ -19,9 +19,9 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
 	
 @Entity	
-public class Board {
+public class Board {   
 		
-		@Id
+		@Id   
 		@GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment
 		private int id;
 		
