@@ -22,22 +22,22 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-public class Reply {
+public class Reply {    
     @Id	//Primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 프로젝트에서 연결된 DB의 넘버링 전략을 따라간다.
     private int id; // 시퀀스, auto_increment
     
     @Column(nullable = false, length = 200)
-    private String content;
+    private String content; 
     
-    @ManyToOne
+    @ManyToOne   
     @JoinColumn(name="boardId")
-    private Board board;
+    private Board board;   
     
     @ManyToOne //   여러개의 답변을 하나의 유저가 쓸 수 있다는 의미.
     @JoinColumn(name="userId")
-    private User user;
+    private User user;   
     
-    @CreationTimestamp
-    private Timestamp createDate;
+    @CreationTimestamp  
+    private Timestamp createDate;   
 }

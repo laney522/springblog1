@@ -18,12 +18,12 @@ import lombok.NoArgsConstructor;
 
 // ORM -> Java(다른언어) Object -> 테이블로 맵핑해주는 기술
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
+@Data  
+@NoArgsConstructor  
+@AllArgsConstructor  
+@Builder  
 @Entity	// User 클래스가 스프링부트가 실행될때 User클래스를 읽어서 자동으로 MySQL에 테이블이 생성된다.
-public class User {     
+public class User {       
 	
 	@Id // Primary key   
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // 프로젝트에서 연결된 DB의 넘버링 전략을 따라간다.
